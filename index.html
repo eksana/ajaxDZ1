@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<h3>Выбрать действие:</h3>
+<form action="sel.php" method="POST">
+	<input type="button" name="button" id="btn" value="Показать таблицу">
+
+	<input type="button" name="button" id="btnRedact" value="Внести данные в таблицу">
+	<input type="button" name="button" id="btnChange" value="Обновить данные">
+	<input type="button" name="button" id="btnDel" value="Удалить данные">
+</form>
+<!--<input type="button" name="button" id="btnChange" value="Изменить таблицу">-->
+
+<div class="alertInset ui-widget-content">
+<h3>Внести данные:</h3><br/>
+<form action="ins.php" method="POST" id="form_inset">
+
+<div class="on">
+<label>Фамилия<br/>
+	<input type="text" name="surname" id="sur" value="">
+	</div>
+	<div class="on">
+	<label>Имя<br/>
+	<input type="text" name="name" id="nm" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Отчество<br/>
+	<input type="text" name="patronymic" id="pt" value="">
+	</label>
+	</div>
+
+	<div class="on">
+	<label>Математика<br/>
+	<input type="text" name="math" id="mt" value="">
+	</label>
+	</div>
+<div class="on">
+	<label>Русский<br/>
+	<input type="text" name="russian" id="rs" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Информатика<br/>
+	<input type="text" name="informatics" id="in" value="">
+	</label>
+	</div>
+
+	<input type="button" name="button" id="btnI" value="добавить">
+	<input type="button" name="buttonC" class="btnClose" value="закрыть">
+</form>
+
+</div>
+
+<div class="alertChange ui-widget-content">
+<h3>Изменить данные:</h3><br/>
+<form action="change.php" method="POST" id="form_change">
+
+<div class="on">
+<label>Фамилия<br/>
+	<input type="text" name="surname" id="sur" value="">
+	</div>
+	<div class="on">
+	<label>Имя<br/>
+	<input type="text" name="name" id="nm" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Отчество<br/>
+	<input type="text" name="patronymic" id="pt" value="">
+	</label>
+	</div>
+
+	<div class="on">
+	<label>Математика<br/>
+	<input type="text" name="math" id="mt" value="">
+	</label>
+	</div>
+<div class="on">
+	<label>Русский<br/>
+	<input type="text" name="russian" id="rs" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Информатика<br/>
+	<input type="text" name="informatics" id="in" value="">
+	</label>
+	</div>
+<div class="on">
+	<label>id<br/>
+	<input type="text" name="id" id="id" value="">
+	</label>
+	</div>
+
+	<input type="button" name="button" id="btnChangeF" value="Изменить">
+	<input type="button" name="buttonC" class="btnClose" value="Закрыть">
+</form>
+</div>
+
+<div class="alertDel ui-widget-content">
+<h3>Удалить данные:</h3><br/>
+<form action="del.php" method="POST" id="form_del">
+
+<div class="on">
+<label>Фамилия<br/>
+	<input type="text" name="surname" id="surD" value="">
+	</div>
+	<div class="on">
+	<label>Имя<br/>
+	<input type="text" name="name" id="nmD" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Отчество<br/>
+	<input type="text" name="patronymic" id="ptD" value="">
+	</label>
+	</div>
+
+	<!--<div class="on">
+	<label>Математика<br/>
+	<input type="text" name="math" id="mtD" value="">
+	</label>
+	</div>
+<div class="on">
+	<label>Русский<br/>
+	<input type="text" name="russian" id="rsD" value="">
+	</label>
+	</div>
+	<div class="on">
+	<label>Информатика<br/>
+	<input type="text" name="informatics" id="inD" value="">
+	</label>-->
+<div class="on">
+	<label>id<br/>
+	<input type="text" name="id" id="idD" value="">
+	</label>
+	</div>
+
+	<input type="button" name="button" id="btnD" value="Удалить">
+	<input type="button" name="buttonC" class="btnClose" value="закрыть">
+</form>
+
+</div>
+
+<div class="alertDel2">
+<form action="del.php"  method="POST" id="form_delConfirm">
+<h3>Вы уверены, что хотите удалить данные?</h3>
+	<input type="button" name="button" id="btnDl" value="Удалить">
+	<input type="button" name="buttonC" class="btnClose" value="закрыть">
+
+</form>
+</div>
+
+<div class="table"></div>
+
+
+
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/notify.min.js"></script>
+		<script src="ajsel.js"></script>
+		<script src="ajins.js"></script>
+		<script src="ajch.js"></script>
+		<script src="ajdel.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,62 @@
+.alertInset{
+	width: 700px;
+	padding: 10px;
+	position: absolute;
+	top:30vh;
+	left:50%;
+	margin-left: -350px;
+	border:1px solid green;
+	display:none;
+	/*background-color: lightolive;*/
+	background-color: lightyellow;
+}
+
+.alertChange,.alertDel,.alertDel2{
+	width: 700px;
+	padding: 10px;
+	position: absolute;
+	top:30vh;
+	left:50%;
+	margin-left: -350px;
+	border:1px solid green;
+	display:none;
+	background-color: lightyellow;
+}
+
+input[type="text"],label,input[type="button"]{
+	display: inline-block;
+	float:left;
+	
+}
+input[type="text"]{
+	margin-left: 10px;
+}
+
+.del{
+	display: none;
+}
+#btnI{
+	height: 25px;
+	border-radius:7px;
+	background-color: yellowgreen;
+}
+#btnI:hover{
+	background-color: lightgreen;
+}
+#btnChangeF{
+	height: 25px;
+	border-radius:7px;
+	background-color: orange;
+}
+#btnChangeF:hover{
+	/*background-color: lightorange;*/
+	background-color: red;
+}
+.fa-edit{
+	cursor: pointer;
+}
+#btnD{
+	height: 25px;
+	border-radius:7px;
+	background-color: red;
+}
