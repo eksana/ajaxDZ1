@@ -41,6 +41,11 @@ $('.alertDel,.alertDel2').fadeOut();
 });
 $('.alertDel').draggable();
 
+$(window).scroll(function(){
+	$('.alertDel').addClass('fix');
+
+});
+
 	
 
 

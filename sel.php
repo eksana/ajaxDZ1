@@ -43,8 +43,8 @@ mysqli_select_db($link,'abits');
 
  
  
-echo '<td><i class="fa fa-edit" data-toggle="modal"
- data-target="#updateModal" title="редактировать"></i></td>';
+echo '<td><i class="fa fa-edit " data-toggle="modal" data-del="#del"
+ data-target="#updateModal" title="редактировать" ></i></td>';
  echo '<td><i class="fa fa-trash-o remove" data-toggle="modal"
  data-target="#removeModal" title="Удалить"></i></td>';
  echo '</tr>';

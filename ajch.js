@@ -37,6 +37,11 @@ $('.alertChange').fadeOut();
 });
 $('.alertChange').draggable();
 
+$(window).scroll(function(){
+	$('.alertChange').addClass('fix');
+
+});
+
 	
 
 

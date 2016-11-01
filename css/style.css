@@ -60,3 +60,18 @@ input[type="text"]{
 	border-radius:7px;
 	background-color: red;
 }
+.fix{
+	position:fixed;
+}
+.action{
+	position: fixed;
+	top:0;
+	background-color: olive;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+}
+.table{
+	margin-top: 140px;
+}
